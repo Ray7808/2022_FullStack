@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: black;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* method 1 */
+/* only word */
+/* nav > ul > li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+} */
+
+/* method 2 */
+/* Cover all li region */
+nav > ul > li {
+  display: flex;
+}
+
+nav > ul > li > a {
+  padding: 0.5rem 0.75rem;
+  color: white;
+  text-decoration: none;
+}

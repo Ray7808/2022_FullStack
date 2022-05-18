@@ -1,0 +1,38 @@
+// Need to download the live sass compiler
+// and need to use html to link the compiled css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$themeColor: green;
+header {
+    background-color: aqua;
+    h1 {
+        color: chocolate;
+    }
+}
+
+h2 {
+    color: $themeColor;
+    &:hover {
+        color: orange;
+    }
+}
+
+@import "./^_^";
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+div.link {
+    @include flexbox(column);
+}
+
+.pic {
+    width: 200px;
+    height: 400px;
+    object-fit: cover; //調整網頁圖片但是不失真
+}

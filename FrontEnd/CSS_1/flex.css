@@ -1,0 +1,36 @@
+div.container {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  flex-grow: 2;
+  flex-basis: 150px;
+  background-color: coral;
+}
+.box2 {
+  flex-grow: 1;
+  flex-basis: 150px;
+  background-color: crimson;
+}
+.box3 {
+  flex-grow: 1;
+  background-color: darkcyan;
+  flex-basis: 150px;
+}
+.box4 {
+  flex-grow: 1;
+  background-color: darkorange;
+  flex-basis: 150px;
+}
+.box5 {
+  flex-grow: 1;
+  background-color: fuchsia;
+  flex-basis: 150px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Discussing about how to use form function -->
+<!-- form part 1 -->
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>熊貓問卷調查</title>
+    <link rel="shortcut icon" href="./pandaIcon.png" />
+    <link rel="bookmark" href="./pandaIcon.png" />
+  </head>
+  <body>
+    <form action="" method="GET">
+      <label for="name">姓名：</label>
+      <input
+        type="text"
+        id="name"
+        name="Input name"
+        placeholder="請輸入真實姓名"
+      />
+      <br />
+      <!-- Need same name value and then type radio can work -->
+      <label for="male">男性</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female">女性</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="other">其他</label>
+      <input type="radio" name="gender" id="other" value="other" required />
+      <br />
+      <label for="number">電話：</label>
+      <input type="text" id="number" name="InputNumber" />
+      <br />
+      <label for="email">信箱：</label>
+      <input type="email" id="email" name="InputEmail" required />
+      <br />
+      <label for="age">年齡：</label>
+      <input
+        type="number"
+        id="age"
+        name="InputAge"
+        value="18"
+        required
+        step="0.01"
+        min="0"
+        max="150"
+      />
+      <br />
+      <label for="password">密碼：</label>
+      <input
+        type="password"
+        id="password"
+        name="InputPassword"
+        minlength="4"
+        maxlength="10"
+      />
+      <br />
+      <label for="area">地區：</label>
+      <input list="arealist" type="text" name="area" id="area" />
+      <datalist id="arealist">
+        <option value="台北市">台北市</option>
+        <option value="基隆市">基隆市</option>
+        <option value="新北市">新北市</option>
+      </datalist>
+      <br />
+      <label for="suggestion">給網站的建議：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="感謝提供建議！"
+      ></textarea>
+      <br />
+      0<input type="range" min="0" max="100" />100
+      <br />
+      <label for="checkbox">訂閱電子報</label>
+      <input type="checkbox" id="checkbox" name="Checkbox" checked />
+      <br />
+      <button type="submit">提交表單</button>
+    </form>
+  </body>
+</html>
