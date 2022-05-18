@@ -49,9 +49,9 @@
 
   這樣在使用導覽列時，就會平滑地移動過去了。
 
-  ---
+---
 
-git remote add origin https://github.com/Ray7808/2022_Fullstack.git
+git remote add origin https://github.com/Ray7808/2022_FullStack.git
 
 git branch -M main
 
