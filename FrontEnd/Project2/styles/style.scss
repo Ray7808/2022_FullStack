@@ -45,7 +45,8 @@ header {
 
 main {
   div {
-    background: "./Pictures/pexels-photo-416676.jpeg";
+    background-color: url("./Pictures/pexels-photo-416676.jpeg") center/cover
+      no-repeat;
     width: 100%;
     height: 350px;
   }
