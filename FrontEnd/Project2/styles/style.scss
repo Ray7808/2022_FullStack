@@ -15,8 +15,8 @@ header {
     flex-direction: row;
     align-items: center;
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 6vw;
+      height: 6vw;
       padding: 1rem;
     }
     p {
@@ -40,5 +40,13 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  div {
+    background: "./Pictures/pexels-photo-416676.jpeg";
+    width: 100%;
+    height: 350px;
   }
 }

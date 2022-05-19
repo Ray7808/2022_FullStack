@@ -2,7 +2,7 @@
   padding: 0%;
   margin: 0%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -12,11 +12,11 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header div.header__left {
@@ -25,16 +25,16 @@ header div.header__left {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header div.header__left img {
-  width: 5rem;
-  height: 5rem;
+  width: 6vw;
+  height: 6vw;
   padding: 1rem;
 }
 
@@ -54,8 +54,8 @@ header div.header__right ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 header div.header__right ul li {
@@ -67,5 +67,10 @@ header div.header__right ul li a {
   text-decoration: none;
   color: #09777d;
   font-size: 1.5rem;
+}
+
+main div {
+  width: 100%;
+  height: 350px;
 }
 /*# sourceMappingURL=style.css.map */
