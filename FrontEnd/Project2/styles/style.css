@@ -17,6 +17,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header div.header__left {
@@ -64,6 +66,7 @@ header div.header__right ul li {
 }
 
 header div.header__right ul li a {
+  display: inline-block;
   text-decoration: none;
   color: #09777d;
   font-size: 1.5rem;
@@ -88,7 +91,6 @@ main div.main__background {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 650px;
 }
 
@@ -139,10 +141,12 @@ main div.service div.service__desc__total {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main div.service div.service__desc__total div.service__desc {
-  width: 33%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,12 +161,16 @@ main div.service div.service__desc__total div.service__desc {
 
 main div.service div.service__desc__total div.service__desc img {
   border-radius: 22rem;
-  width: 50%;
+  width: 75%;
 }
 
 main div.service div.service__desc__total div.service__desc h3 {
   font-size: 1.5rem;
   padding: 1.2rem;
+}
+
+main div.service div.service__desc__total div.service__desc p {
+  text-align: center;
 }
 
 main div.service div.service__desc__total div.service__desc div {
@@ -238,5 +246,43 @@ footer div.footer__link a {
 
 footer div.footer__link a img {
   width: 60%;
+}
+
+@media screen and (max-width: 875px) {
+  header div.header__left img {
+    width: 15vw;
+    height: 15vw;
+  }
+  header div.header__right {
+    width: 100%;
+  }
+  header div.header__right ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header div.header__right ul li {
+    padding: 1rem;
+  }
+  main div.main__background div.main__description {
+    width: 30rem;
+  }
+  main div.main__background div.main__description p {
+    font-size: 2rem;
+  }
+  main div.main__background div.main__button a {
+    font-size: 1.5rem;
+  }
+  main div.service div.service__desc__total div.service__desc {
+    min-width: 80%;
+  }
+  main div.service div.service__desc__total div.service__desc img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header div.header__right ul li {
+    padding: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

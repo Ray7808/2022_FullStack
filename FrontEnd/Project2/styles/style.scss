@@ -9,6 +9,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   div.header__left {
     display: flex;
@@ -33,7 +34,9 @@ header {
       li {
         list-style: none;
         padding: 1.5rem;
+
         a {
+          display: inline-block;
           text-decoration: none;
           color: #09777d;
           font-size: 1.5rem;
@@ -54,7 +57,6 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
     height: 650px;
 
     div.main__description {
@@ -95,18 +97,22 @@ main {
     div.service__desc__total {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       div.service__desc {
-        width: 33%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
         img {
           border-radius: 22rem;
-          width: 50%;
+          width: 75%;
         }
         h3 {
           font-size: 1.5rem;
           padding: 1.2rem;
+        }
+        p {
+          text-align: center;
         }
         div {
           margin-top: 1.5rem;
@@ -160,6 +166,62 @@ footer {
       padding: 1rem;
       img {
         width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  header {
+    div.header__left {
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+    div.header__right {
+      width: 100%;
+      ul {
+        justify-content: space-around;
+        li {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  main {
+    div.main__background {
+      div.main__description {
+        width: 30rem;
+        p {
+          font-size: 2rem;
+        }
+      }
+      div.main__button {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    div.service {
+      div.service__desc__total {
+        div.service__desc {
+          min-width: 80%;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    div.header__right {
+      ul {
+        li {
+          padding: 0rem;
+        }
       }
     }
   }
