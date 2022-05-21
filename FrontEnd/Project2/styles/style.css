@@ -163,14 +163,35 @@ main div.service div.service__desc__total div.service__desc {
           align-items: center;
 }
 
-main div.service div.service__desc__total div.service__desc img {
-  margin: 0.5rem 0rem;
+main div.service div.service__desc__total div.service__desc div.image__container {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.service div.service__desc__total div.service__desc div.image__container img {
+  width: 20vw;
   border-radius: 22rem;
-  width: 75%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main div.service div.service__desc__total div.service__desc div.image__container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main div.service div.service__desc__total div.service__desc h3 {
-  margin: 0.5rem 0rem;
   font-size: 1.5rem;
   padding: 1.2rem;
 }
