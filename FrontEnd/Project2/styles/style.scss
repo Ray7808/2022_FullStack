@@ -44,10 +44,123 @@ header {
 }
 
 main {
-  div {
-    background-color: url("./Pictures/pexels-photo-416676.jpeg") center/cover
-      no-repeat;
+  div.main__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25)),
+      url("../Pictures/pexels-photo-416676.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    height: 350px;
+    height: 650px;
+
+    div.main__description {
+      width: 45rem;
+      p {
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+      }
+    }
+    div.main__button {
+      background-color: rgb(54, 234, 234);
+      margin-top: 2rem;
+      padding: 1rem 3rem;
+      border-radius: 1rem;
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+      }
+    }
+  }
+
+  div.service {
+    width: 100%;
+
+    div.service__title {
+      padding: 2.5rem;
+      p {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p.service__title__changeColor {
+        color: rgb(37, 153, 153);
+      }
+    }
+    div.service__desc__total {
+      display: flex;
+      justify-content: space-around;
+      div.service__desc {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          border-radius: 22rem;
+          width: 50%;
+        }
+        h3 {
+          font-size: 1.5rem;
+          padding: 1.2rem;
+        }
+        div {
+          margin-top: 1.5rem;
+          margin-bottom: 3rem;
+          background-color: rgb(37, 153, 153);
+          padding: 0.5rem 1rem;
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(244, 241, 241);
+  div.footer__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    img {
+      width: 15%;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+  }
+  div.footer__info {
+    a {
+      display: inline-block;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  div.footer__link {
+    padding-bottom: 2rem;
+    a {
+      display: inline-block;
+      padding: 1rem;
+      img {
+        width: 60%;
+      }
+    }
   }
 }
