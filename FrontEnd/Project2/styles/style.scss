@@ -104,17 +104,23 @@ main {
         flex-direction: column;
         align-items: center;
         img {
+          margin: 0.5rem 0rem;
           border-radius: 22rem;
           width: 75%;
         }
         h3 {
+          margin: 0.5rem 0rem;
+
           font-size: 1.5rem;
           padding: 1.2rem;
         }
         p {
+          margin: 0.5rem 0rem;
+
           text-align: center;
         }
         div {
+          margin: 0.5rem 0rem;
           margin-top: 1.5rem;
           margin-bottom: 3rem;
           background-color: rgb(37, 153, 153);
