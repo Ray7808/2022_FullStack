@@ -49,12 +49,8 @@
 
   這樣在使用導覽列時，就會平滑地移動過去了。
 
----
+- CSS tricks
 
-git pull origin main
-
-git remote add origin https://github.com/Ray7808/2022_FullStack.git
-
-git branch -M main
-
-git push -u origin main
+  這是一個提供 css 多種小技巧的網站，
+  可以透過想玩的特效等等的部分，上去找對應的技巧，
+  像是 shadow(陰影)或是 flexbox 等等。
