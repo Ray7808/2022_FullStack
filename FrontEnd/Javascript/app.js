@@ -10,31 +10,31 @@
 // console.log(name2);
 
 //Guess game
-// let game = Math.floor(100 * Math.random());
-// console.log(game);
+let game = Math.floor(100 * Math.random());
+console.log(game);
 
-// let temp = 0;
-// let temp2 = 99;
-// let guess = prompt("請輸入一個0~99的數字");
+let temp = 0;
+let temp2 = 99;
+let guess = prompt("請輸入一個0~99的數字");
 
-// while (guess != game) {
-//   if (guess < temp || guess > temp2) {
-//     alert("Please make a valid input!");
-//     continue;
-//   }
-//   if (guess > game) {
-//     temp2 = guess;
-//     guess = prompt("請輸入一個" + temp + "~" + temp2 + "的數字");
-//   } else if (guess < game) {
-//     temp = guess;
-//     guess = prompt("請輸入一個" + temp + "~" + temp2 + "的數字");
-//   } else if (guess == "break") {
-//     break;
-//   } else {
-//     break;
-//   }
-// }
-// alert("正確數字就是" + game + "!");
+while (`guess != game`) {
+  if (guess < temp || guess > temp2) {
+    alert("Please make a valid input!");
+    continue;
+  }
+  if (guess > game) {
+    temp2 = guess;
+    guess = prompt("請輸入一個" + temp + "~" + temp2 + "的數字");
+  } else if (guess < game) {
+    temp = guess;
+    guess = prompt("請輸入一個" + temp + "~" + temp2 + "的數字");
+  } else if (guess == "break") {
+    break;
+  } else {
+    break;
+  }
+}
+alert("正確數字就是" + game + "!");
 
 //Coding practice 1
 // const friends = ["Harry", "Ron", "Snap"];
@@ -114,3 +114,5 @@
 // console.log(isUpperCase("ABCD")); // returns true
 // console.log(isUpperCase("")); // returns false
 // console.log(isUpperCase("aBCD")); // returns false
+
+
