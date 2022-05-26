@@ -15,87 +15,101 @@ div.animation {
 #first_1 {
   stroke-dasharray: 699px;
   stroke-dashoffset: 699px;
-  animation: fadeInside 0.8s ease-in forwards 0.3s;
+  animation: fadeInside 0.8s ease-in forwards 0.3s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 
 #first_2 {
   stroke-dasharray: 238px;
   stroke-dashoffset: 238px;
-  animation: fadeInside 0.8s ease-in forwards 0.6s;
+  animation: fadeInside 0.8s ease-in forwards 0.6s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_3 {
   stroke-dasharray: 222px;
   stroke-dashoffset: 222px;
-  animation: fadeInside 0.8s ease-in forwards 0.9s;
+  animation: fadeInside 0.8s ease-in forwards 0.9s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_4 {
   stroke-dasharray: 370px;
   stroke-dashoffset: 370px;
-  animation: fadeInside 0.8s ease-in forwards 1.2s;
+  animation: fadeInside 0.8s ease-in forwards 1.2s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_5 {
   stroke-dasharray: 359px;
   stroke-dashoffset: 359px;
-  animation: fadeInside 0.8s ease-in forwards 1.5s;
+  animation: fadeInside 0.8s ease-in forwards 1.5s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_6 {
   stroke-dasharray: 370px;
   stroke-dashoffset: 370px;
-  animation: fadeInside 0.8s ease-in forwards 1.8s;
+  animation: fadeInside 0.8s ease-in forwards 1.8s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_7 {
   stroke-dasharray: 504px;
   stroke-dashoffset: 504px;
-  animation: fadeInside 0.8s ease-in forwards 2.1s;
+  animation: fadeInside 0.8s ease-in forwards 2.1s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_8 {
   stroke-dasharray: 412px;
   stroke-dashoffset: 412px;
-  animation: fadeInside 0.8s ease-in forwards 2.4s;
+  animation: fadeInside 0.8s ease-in forwards 2.4s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_9 {
   stroke-dasharray: 370px;
   stroke-dashoffset: 370px;
-  animation: fadeInside 0.8s ease-in forwards 2.7s;
+  animation: fadeInside 0.8s ease-in forwards 2.7s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_10 {
   stroke-dasharray: 1385px;
   stroke-dashoffset: 1385px;
-  animation: fadeInside 0.8s ease-in forwards 3s;
+  animation: fadeInside 0.8s ease-in forwards 3s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_11 {
   stroke-dasharray: 1132px;
   stroke-dashoffset: 1132px;
-  animation: fadeInside 0.8s ease-in forwards 3.3s;
+  animation: fadeInside 0.8s ease-in forwards 3.3s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_12 {
   stroke-dasharray: 1173px;
   stroke-dashoffset: 1173px;
-  animation: fadeInside 0.8s ease-in forwards 3.6s;
+  animation: fadeInside 0.8s ease-in forwards 3.6s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_13 {
   stroke-dasharray: 1388px;
   stroke-dashoffset: 1388px;
-  animation: fadeInside 0.8s ease-in forwards 3.9s;
+  animation: fadeInside 0.8s ease-in forwards 3.9s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_14 {
   stroke-dasharray: 605px;
   stroke-dashoffset: 605px;
-  animation: fadeInside 0.8s ease-in forwards 4.2s;
+  animation: fadeInside 0.8s ease-in forwards 4.2s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_15 {
   stroke-dasharray: 1283px;
   stroke-dashoffset: 1283px;
-  animation: fadeInside 0.8s ease-in forwards 4.5s;
+  animation: fadeInside 0.8s ease-in forwards 4.5s,
+    fillAll 1s ease-in forwards 4.8s;
 }
 #first_16 {
   stroke-dasharray: 1209px;
   stroke-dashoffset: 1209px;
-  animation: fadeInside 0.8s ease-in forwards 4.8s;
+  animation: fadeInside 0.8s ease-in forwards 4.8s,
+    fillAll 1s ease-in forwards 4.8s;
 }
-svg {
-  animation: fillAll 1s ease-in forwards 4.8s;
-}
+
 @keyframes fadeInside {
   to {
     stroke-dashoffset: 0px;
