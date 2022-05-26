@@ -72,6 +72,98 @@ main {
       right: 28vw;
     }
   }
+
+  // resume.html
+  section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        transition: all 0.2s ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: #ffd2b8;
+        }
+      }
+    }
+  }
+  section.picture {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      width: 30vw;
+    }
+    div.orangeRect {
+      width: 30vw;
+      height: 90vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 30px;
+      left: 80px;
+      z-index: -1;
+    }
+  }
+
+  // contact.html
+  section.form {
+    flex: 1 1 600px;
+    form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1.5rem;
+      div {
+        margin: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #ffd0b5;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 80%;
+        }
+        textarea {
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        background-color: #e08958;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem 1.5rem;
+        font-size: 2rem;
+        border-radius: 10px;
+      }
+    }
+  }
+  div.line {
+    background-color: gray;
+    width: 3px;
+  }
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    div.content {
+      h2 {
+        margin: 1rem 0rem;
+      }
+    }
+  }
 }
 
 footer {
@@ -106,6 +198,17 @@ footer {
         height: 50vh;
         transform: none;
         position: static;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 40vw;
+      }
+      div.orangeRect {
+        display: none;
       }
     }
   }
