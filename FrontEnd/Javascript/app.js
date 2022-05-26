@@ -6,3 +6,5 @@
 
 // prompt()
 // prompt("請輸入年齡：");
+// let name2 = prompt("請輸入你的姓名：");
+// console.log(name2);
