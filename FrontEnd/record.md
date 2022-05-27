@@ -123,3 +123,26 @@
   example: let OAO=()=>{blabla}
   假如用`this`的話指的是`window`不是該物件。
   除非用 OAO(){blabla}裡面用`this`只的才是該物件。
+
+- forEach function
+
+  使用這個 forEach 代表裡面的參數會針對這個 array 裡面所有的參數帶入設定的 function。裏面裡面使用的是`CallBack function`裡面的參數分別代表(`currnetValue`,`index`)`(重要！)`
+
+---
+
+- array
+
+  裡面包含 length, index
+  可以使用 push, pop, shift, unshift
+
+- HTMLCollection
+
+  example:使用 getElementsByClassName 取得多個 html 標籤
+
+- NodeList
+  
+  example:使用querySelectorAll抓取所有的html標籤
+  跟 HTMLCollection 相似，都具備同樣的長度性質，也具備 index 的資訊。
+  但是跟 array 不一樣，所以 push、pop 等功能沒辦法使用。
+
+`重要！` array跟NodeList都可以使用forEach function，但是HTMLCollection無法。

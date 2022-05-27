@@ -580,8 +580,39 @@
 
 // Wilson.walk();
 
-let sayHi = (name) => {
-  console.log("Hi, " + name);
-};
+// let sayHi = (name) => {
+//   console.log("Hi, " + name);
+// };
 
-sayHi("Jojo");
+// sayHi("Jojo");
+
+//forEach function takes one parameter - function
+// let luckyNumber = [7, 15, 23, 66, 91, 10, 13];
+// luckyNumber.forEach(function checkNum(n) {
+//   if (n > 20) {
+//     console.log(n);
+//   }
+// });
+// luckyNumber.forEach(function (n) {
+//   if (n > 20) {
+//     console.log(n);
+//   }
+// });
+// luckyNumber.forEach(checkNum);
+// function checkNum(n) {
+//   if (n > 20) {
+//     console.log(n);
+//   }
+// }
+// luckyNumber.forEach((n) => {
+//   if (n > 20) {
+//     console.log(n);
+//   }
+// });
+// luckyNumber.forEach(n => {
+//   if (n > 20) {
+//     console.log(n);
+//   }
+// });
+
+//The parameter of forEach function is called "CallBack" function
