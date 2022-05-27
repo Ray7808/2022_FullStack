@@ -71,4 +71,55 @@
   這是一個可以免費架設網站的地方，但並不是唯一的。
   其他像是`AWS`或是`cpanel(付費)`都具有架設網站的功能。
 
-#
+# Document Object Model (DOM)文件物件模型
+
+# Window Object Properties
+
+## 以下均為 Object
+
+- Console
+
+  - log()
+  - error() `跟log()用法一下，可以在必要的時候給自己一些警示訊息。`
+
+- Document
+
+- LocalStorage
+
+- SessionStorage
+
+`但這不代表所有的window object的properties都是object`
+`像是number、boolean或是string就不是object`
+
+---
+
+## What exactly is DOM?
+
+- `DOM中的D(document)代表HTML document`
+
+- `This model means all HTML elements are objects and they all have their properties and methods`
+
+---
+
+## Document Object methods
+
+常見的 methods:
+
+- addEventListener() `##重要！`
+
+- createElement() `##重要！`
+
+- getElementById()
+  ex: let example = document.getElementById(`ID名稱`)
+
+- getElementsByClassName() `#可同時多選`
+
+- querySelector() `##重要！`
+
+- querySelectorAll() `##重要！`
+
+- Arrow function expression
+
+  example: let OAO=()=>{blabla}
+  假如用`this`的話指的是`window`不是該物件。
+  除非用 OAO(){blabla}裡面用`this`只的才是該物件。

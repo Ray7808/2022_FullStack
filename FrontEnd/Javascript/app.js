@@ -547,26 +547,41 @@
 // }
 // intersection([1, 3, 4, 6, 10], [5, 11, 4, 3, 100, 144, 0]); // returns [3, 4]
 
-function flatten(arr) {
-  //   let tmp = arr.flat();
-  //   console.log(tmp);
-  //   let tmp2 = tmp.flat();
-  //   console.log(tmp2);
-  //   let tmp3 = tmp2.flat();
-  //   console.log(tmp3);
-  let result = [];
-  helper(arr);
-  console.log(result);
-  function helper(arr1) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (Array.isArray(arr1[i])) {
-        helper(arr1[i]);
-      } else {
-        result.push(arr1[i]);
-      }
-    }
-  }
-}
+// function flatten(arr) {
+//   //   let tmp = arr.flat();
+//   //   console.log(tmp);
+//   //   let tmp2 = tmp.flat();
+//   //   console.log(tmp2);
+//   //   let tmp3 = tmp2.flat();
+//   //   console.log(tmp3);
+//   let result = [];
+//   helper(arr);
+//   console.log(result);
+//   function helper(arr1) {
+//     for (let i = 0; i < arr1.length; i++) {
+//       if (Array.isArray(arr1[i])) {
+//         helper(arr1[i]);
+//       } else {
+//         result.push(arr1[i]);
+//       }
+//     }
+//   }
+// }
 
-flatten([1, [[], 2, [0, [1]], [3]], [1, 3, [3], [4, [1]], [2]]]);
-// // returns [1, 2, 0, 1, 3, 1, 3, 3, 4, 1, 2]
+// flatten([1, [[], 2, [0, [1]], [3]], [1, 3, [3], [4, [1]], [2]]]);
+// // // returns [1, 2, 0, 1, 3, 1, 3, 3, 4, 1, 2]
+
+// let Wilson = {
+//   name: "Wilson Ren",
+//   walk() {
+//     console.log("Wilson Ren is walking on the street.");
+//   },
+// };
+
+// Wilson.walk();
+
+let sayHi = (name) => {
+  console.log("Hi, " + name);
+};
+
+sayHi("Jojo");
