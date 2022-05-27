@@ -235,3 +235,105 @@
 // // *\n**
 // makeStars(5);
 // // *\n**\n***\n****\n*****
+
+// function stars2(n) {
+//   let arr = [];
+//   let tmp = "";
+//   for (let i = 0; i < n; i++) {
+//     tmp += "*";
+//     arr[i] = tmp;
+//     console.log(arr[i]);
+//   }
+//   for (let j = n - 2; j >= 0; j--) {
+//     console.log(arr[j]);
+//   }
+// }
+// stars2(1);
+// *
+// stars2(2);
+// *
+// **
+// *
+// stars2(3);
+// *
+// **
+// ***
+// **
+// *
+// stars2(4);
+// *
+// **
+// ***
+// ****
+// ***
+// **
+// *
+
+// function table(n) {
+//   for (let i = 1; i <= 9; i++) {
+//     console.log(n + " x " + i + " = " + i * n);
+//   }
+// }
+// table(3);
+// 3 x 1 = 3
+// 3 x 2 = 6
+// ...
+// 3 x 9 = 27
+
+// function table9to9() {
+//   for (let i = 1; i <= 9; i++) {
+//     for (let j = 1; j <= 9; j++) {
+//       console.log(i + " x " + j + " = " + i * j);
+//     }
+//   }
+// }
+// table9to9();
+// 1 x 1 = 1
+// 1 x 2 = 2
+// 1 x 3 = 3
+// ...
+// 1 x 9 = 9
+// 2 x 1 = 2
+// 2 x 2 = 4
+// ...
+// 9 x 9 = 81
+
+// function fib(n) {
+//   const f0 = 0;
+//   const f1 = 1;
+//   let tmp = f0;
+//   let tmp1 = f1;
+//   let tmp2 = 0;
+//   if (n == 0) {
+//     console.log(0);
+//   } else if (n == 1) {
+//     console.log(1);
+//   } else {
+//     for (let i = 2; i <= n; i++) {
+//       tmp2 = tmp1 + tmp;
+//       // console.log(tmp2);
+//       tmp = tmp1;
+//       tmp1 = tmp2;
+//     }
+//     console.log(tmp2);
+//   }
+// }
+// fib(0); // returns 0
+// fib(1); // returns 1
+// fib(2); // returns 1
+// fib(3); // returns 2
+// fib(8); // returns 21
+
+// function reverse(arr) {
+//   let re = "";
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     re += arr[i];
+//   }
+//   console.log(re);
+// }
+// reverse("abcd"); // returns "dcba"
+// reverse("I am a good guy."); // returns ".yug doog a am I"
+
+function swap(arr) {}
+swap("Aloha"); // returns "aLOHA"
+swap("Love you."); // returns "lOVE YOU."
