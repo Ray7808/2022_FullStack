@@ -334,6 +334,239 @@
 // reverse("abcd"); // returns "dcba"
 // reverse("I am a good guy."); // returns ".yug doog a am I"
 
-function swap(arr) {}
-swap("Aloha"); // returns "aLOHA"
-swap("Love you."); // returns "lOVE YOU."
+// function swap(arr) {
+//   arr = arr.split("");
+//   let tmp = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= "A" && arr[i] <= "Z") {
+//       tmp += arr[i].toLowerCase();
+//     } else if (arr[i] >= "a" && arr[i] <= "z") {
+//       tmp += arr[i].toUpperCase();
+//     }
+//   }
+//   console.log(tmp);
+// }
+// swap("Aloha"); // returns "aLOHA"
+// swap("Love you."); // returns "lOVE YOU."
+
+// function findMin(arr) {
+//   let tmp = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < tmp) {
+//       tmp = arr[i];
+//     }
+//   }
+//   console.log(tmp);
+// }
+// findMin([1, 2, 5, 6, 99, 4, 5]); // returns 1
+// findMin([]); // returns undefined
+// findMin([1, 6, 0, 33, 44, 88, -10]); // returns -10
+
+// function findNthMin(arr, n) {
+//   let tmp = arr.slice(0, n);
+//   console.log(tmp[tmp.length - 1]);
+// }
+// findNthMin([1, 2, 3, 4, 5], 1); // returns 1
+// findNthMin([1, 3, 5, 7, 9], 3); // returns 5
+
+// function mySort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j <= i; j++) {
+//       if (arr[i] > arr[j]) {
+//         let tmp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = tmp;
+//       }
+//     }
+//   }
+//   console.log(arr);
+// }
+// mySort([17, 0, -3, 2, 1, 0.5]); // returns [-3, 0, 0.5, 1, 2, 17]
+
+// function isPrime(n) {
+//   if (n == 1) {
+//     console.log("False");
+//   } else {
+//     let tmp = 0;
+//     for (let i = 1; i <= n; i++) {
+//       if (n % i == 0) {
+//         tmp++;
+//       }
+//     }
+//     if (tmp > 2) {
+//       console.log("False");
+//     } else {
+//       console.log("Ture");
+//     }
+//   }
+// }
+// isPrime(1); // returns false
+// isPrime(5); // returns true
+// isPrime(91); // returns false
+// isPrime(1000000); // returns false
+
+// function confirmEnding(arr, arr2) {
+//   for (let i = 0; i < arr2.length; i++) {
+//     if (arr[arr.length - i - 1] === arr2[arr2.length - i - 1]) {
+//       continue;
+//     } else {
+//       console.log("False");
+//       return;
+//     }
+//   }
+//   console.log("True");
+// }
+// confirmEnding("Bastian", "n"); // true
+// confirmEnding("Connor", "n"); // false
+// confirmEnding("Open sesame", "same"); // true
+
+// function findDuplicate(arr) {
+//   let tmp = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     tmp = arr[i];
+//     for (let j = 0; j < arr.length; j++) {
+//       if (i == j) {
+//         continue;
+//       } else if (tmp == arr[j]) {
+//         console.log("True");
+//         return;
+//       }
+//     }
+//   }
+//   console.log("False");
+// }
+// findDuplicate([1, 3, 5, 7, 9, 3]); // returns true
+// findDuplicate([]); // returns false
+// findDuplicate([3, 4, 5, 6, 7, 10000, 0]); // returns false
+
+// function palindrome(arr) {
+//   arr = arr.toLowerCase();
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[arr.length - i - 1]) {
+//       continue;
+//     } else {
+//       console.log("False");
+//       return;
+//     }
+//   }
+//   console.log("Ture");
+// }
+// palindrome("bearaeb"); // true
+// palindrome("Whatever revetahw"); // true
+// palindrome("Aloha, how are you today?"); // false
+
+// function pyramid(n) {
+//   for (let i = 1; i <= n; i++) {
+//     let tmp = "";
+//     for (let j = i; j < n; j++) {
+//       tmp += " ";
+//     }
+//     for (let k = 0; k < 2 * i - 1; k++) {
+//       tmp += "*";
+//     }
+//     console.log(tmp);
+//   }
+// }
+// pyramid(1);
+// //*
+// pyramid(2);
+// //  *
+// // ***
+// pyramid(4);
+// //    *
+// //   ***
+// //  *****
+// // *******
+
+// function inversePyramid(n) {
+//   for (let i = n; i >= 0; i--) {
+//     let tmp = "";
+//     for (let j = i; j < n; j++) {
+//       tmp += " ";
+//     }
+//     for (let k = 0; k < 2 * i - 1; k++) {
+//       tmp += "*";
+//     }
+//     console.log(tmp);
+//   }
+// }
+// inversePyramid(4);
+// *******
+//  *****
+//   ***
+//    *
+
+// function factorPrime(n) {
+//   let tmp = [];
+//   let k = 0;
+//   while (n !== 1) {
+//     for (let i = 1; i < n; i++) {
+//       if (n % i == 0) {
+//         k = i;
+//       }
+//     }
+//     // tmp = tmp.push(floor(n / k));
+//     n = Math.floor(n / k);
+//     // console.log(n);
+//     tmp.push(n);
+//     n = k;
+//   }
+//   //   console.log(tmp);
+//   let result = "";
+//   for (let j = 0; j < tmp.length; j++) {
+//     if (j == 0) {
+//       result += tmp[j];
+//     } else {
+//       result += " x " + tmp[j];
+//     }
+//   }
+//   console.log(result);
+// }
+// factorPrime(120); // returns "2 x 2 x 2 x 3 x 5"
+
+// function intersection(arr, arr2) {
+//   let a1, a2;
+//   let result = [];
+//   if (arr2.length > arr.length) {
+//     a1 = arr;
+//     a2 = arr2;
+//   } else {
+//     a1 = arr2;
+//     a2 = arr;
+//   }
+//   for (let i = 0; i < arr.length; i++) {
+//     let tmp = arr[i];
+//     for (let j = 0; j < arr2.length; j++) {
+//       let tmp2 = arr2[j];
+//       if (tmp === tmp2) {
+//         result.push(tmp);
+//       }
+//     }
+//   }
+//   console.log(result);
+// }
+// intersection([1, 3, 4, 6, 10], [5, 11, 4, 3, 100, 144, 0]); // returns [3, 4]
+
+function flatten(arr) {
+  //   let tmp = arr.flat();
+  //   console.log(tmp);
+  //   let tmp2 = tmp.flat();
+  //   console.log(tmp2);
+  //   let tmp3 = tmp2.flat();
+  //   console.log(tmp3);
+  let result = [];
+  helper(arr);
+  console.log(result);
+  function helper(arr1) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (Array.isArray(arr1[i])) {
+        helper(arr1[i]);
+      } else {
+        result.push(arr1[i]);
+      }
+    }
+  }
+}
+
+flatten([1, [[], 2, [0, [1]], [3]], [1, 3, [3], [4, [1]], [2]]]);
+// // returns [1, 2, 0, 1, 3, 1, 3, 3, 4, 1, 2]
