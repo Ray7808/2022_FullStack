@@ -140,9 +140,50 @@
   example:使用 getElementsByClassName 取得多個 html 標籤
 
 - NodeList
-  
-  example:使用querySelectorAll抓取所有的html標籤
+
+  example:使用 querySelectorAll 抓取所有的 html 標籤
   跟 HTMLCollection 相似，都具備同樣的長度性質，也具備 index 的資訊。
   但是跟 array 不一樣，所以 push、pop 等功能沒辦法使用。
 
-`重要！` array跟NodeList都可以使用forEach function，但是HTMLCollection無法。
+`重要！` array 跟 NodeList 都可以使用 forEach function，但是 HTMLCollection 無法。
+
+---
+
+## Element object
+
+以下是 element object 的描述：
+
+- Different HTML element `might have its own methods and properites.`
+
+- All HTML elements must have properties and methods from this list.
+
+  - addEventListener()
+
+  - appendChild()
+
+  - children
+
+    `return HTMLCollection`
+
+  - childNode
+
+    `return NodeList`
+
+  - classList(add(),remove(),toggle(),contains())
+
+  - getAttribute()
+
+  - innerHTML, innerText
+
+    `可以透過這兩個元素修改該標籤顯示的內容`
+    他們之間唯一的差別就是`innerHTML`會被當作 HTML 來閱讀，但是`innerText`則是當作 string。
+
+    ex:<mark>I am a man </mark>在`innerHTML`就會顯示黃色背景，在`innerText`則會將`<mark>`等元素顯示出來。
+
+  - parentElement
+
+  - querySelector()
+
+  - querySelectorAll()
+
+    `return NodeList`

@@ -616,3 +616,9 @@
 // });
 
 //The parameter of forEach function is called "CallBack" function
+
+let body = document.querySelector("body");
+let myh1 = document.createElement("h1");
+myh1.innerText = "Hi I am Wilson";
+
+body.appendChild(myh1);
