@@ -617,8 +617,16 @@
 
 //The parameter of forEach function is called "CallBack" function
 
-let body = document.querySelector("body");
-let myh1 = document.createElement("h1");
-myh1.innerText = "Hi I am Wilson";
+//Using JS to add the additional element
+// let body = document.querySelector("body");
+// let myh1 = document.createElement("h1");
+// myh1.innerText = "Hi I am Wilson";
 
-body.appendChild(myh1);
+// body.appendChild(myh1);
+
+//using classList.add to add the class inside HTML
+let myP = document.querySelector("p");
+console.log(myP.classList);
+
+myP.classList.add("red");
+myP.classList.add("bold");
