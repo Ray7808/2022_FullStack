@@ -182,6 +182,9 @@
 
   - getAttribute()
 
+    這個是可以針對已經設定 href, title 等等屬性的標籤，
+    可以透過 JS 抓取這些屬性並且拿來運用。
+
   - innerHTML, innerText
 
     `可以透過這兩個元素修改該標籤顯示的內容`
@@ -196,3 +199,22 @@
   - querySelectorAll()
 
     `return NodeList`
+
+    假如先用 `querySelector`抓取外部的 `section` 標籤，再用 `querySelectorAll` 抓取 section 內部的 h1 標籤的話，
+    這樣外部的 h1 標籤就不會被抓到，這樣可以只針對 section 內部的標籤做修改。
+
+    Example:
+
+    `let section = document.querySelector("section");`
+
+    `let redP = section.querySelectorAll("p.red");`
+
+  - remove()
+
+    假如先用`querySelector`抓取對應的標籤，就可以使用`remove(該標籤)`來消除該標籤及內容。
+
+    example:
+
+    `let heading = document.querySelector("h1);`
+
+    `heading.remove();`

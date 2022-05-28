@@ -625,8 +625,12 @@
 // body.appendChild(myh1);
 
 //using classList.add to add the class inside HTML
-let myP = document.querySelector("p");
-console.log(myP.classList);
+// let myP = document.querySelector("p");
+// console.log(myP.classList);
 
-myP.classList.add("red");
-myP.classList.add("bold");
+// myP.classList.add("red");
+// myP.classList.add("bold");
+
+//getAttribute()
+let a = document.querySelector("a");
+console.log(a.getAttribute("href"));
