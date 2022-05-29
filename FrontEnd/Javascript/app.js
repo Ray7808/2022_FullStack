@@ -632,5 +632,10 @@
 // myP.classList.add("bold");
 
 //getAttribute()
-let a = document.querySelector("a");
-console.log(a.getAttribute("href"));
+// let a = document.querySelector("a");
+// console.log(a.getAttribute("href"));
+
+//window object
+window.addEventListener("click", (e) => {
+  console.log(e);
+});

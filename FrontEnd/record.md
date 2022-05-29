@@ -218,3 +218,7 @@
     `let heading = document.querySelector("h1);`
 
     `heading.remove();`
+
+---
+
+## Inheritance 繼承
