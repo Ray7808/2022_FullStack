@@ -221,4 +221,12 @@
 
 ---
 
-## Inheritance 繼承
+# 雜語
+
+- Dynamic header：
+
+  假如想針對頁面移動到不同位置，然後 header 有不同的變化的話，
+  可以使用`addEventListener("scroll")`這個屬性，搭配`window.pafeYOffset` 就可以根據不同的滑動結果去設定頁面的各個屬性。
+
+- Event Bubbling`(重要！)`
+  假如用兩層標籤包裹並各別加入`addEventListener`，譬如設定兩個`div`標籤，並設定`"click"`的屬性，這樣要是點選裡面的`div`標籤的話，外面的`div`標籤也會啟動，但是只有點選外面的`div`標籤則不會啟動裡面的，這個就叫做`Event Bubbling`。
