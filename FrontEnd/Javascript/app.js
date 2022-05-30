@@ -636,6 +636,25 @@
 // console.log(a.getAttribute("href"));
 
 //window object
-window.addEventListener("click", (e) => {
-  console.log(e);
-});
+// window.addEventListener("click", (e) => {
+//   console.log(e);
+// });
+
+//target, preventDefault()
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click", (e) => {
+//   console.log(e.target.innerText);
+// });
+// let button = document.querySelector("button");
+// button.addEventListener("click", (e) => {
+//   e.preventDefault(); //預防預設的情況發生
+// });
+
+//style (inline styling)(會蓋過所有在css上設的設定)
+let button = document.querySelector("button");
+//method 1
+// button.style.backgroundColor = "black";
+// button.style.color = "white";
+//method 2
+button.style = "background-color:black; color:white;";
+// button.style = "";
