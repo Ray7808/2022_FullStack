@@ -651,10 +651,33 @@
 // });
 
 //style (inline styling)(會蓋過所有在css上設的設定)
-let button = document.querySelector("button");
+// let button = document.querySelector("button");
 //method 1
 // button.style.backgroundColor = "black";
 // button.style.color = "white";
 //method 2
-button.style = "background-color:black; color:white;";
+// button.style = "background-color:black; color:white;";
 // button.style = "";
+
+//Avoid event bubbling
+// let a = document.querySelector("div.a");
+// let b = document.querySelector("div.b");
+// a.addEventListener("click", () => {
+//   alert("a's event listener's callback is running!");
+// });
+// b.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   alert("b's event listener's callback is running!");
+// });
+
+//setItem, getItem, removeItem, clear
+// localStorage.setItem("name", "Wilson Ren");
+// console.log(localStorage);
+// localStorage.setItem("address", "Hawaii St.");
+// localStorage.setItem("car", "Toyota");
+
+// let myAddress = localStorage.getItem("name");
+// console.log(myAddress);
+
+// localStorage.removeItem("name");
+localStorage.clear();

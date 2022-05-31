@@ -85,9 +85,29 @@
 - Document
 
 - LocalStorage
-
 - SessionStorage
 
+  Storage is a place to store data in browser (This is not database)
+
+  key value pair (Both must be string. If the value is not string, thin it would be cast to string.)
+  <br/>這意味著一個 name 連結一個 value
+
+  以下是`localStorage`和`sessionStorage`都可以使用的 method:
+
+  - setItem(key, value)
+
+  - getItem(key)
+
+  - removeItem(key)
+
+  - clear()
+
+    <mark>(重要)key 是不能重複的</mark><br/>
+    <mark>(重要)Storage 只能儲存 String</mark>
+
+  `Local storage`和`session storage`主要的差別在於當使用者關閉瀏覽器時， `session storage`就會被破壞掉，但是`local storage`則沒有有效期限(假如沒有刪掉的話會一直存在)
+
+<br/><br/>
 `但這不代表所有的window object的properties都是object`
 `像是number、boolean或是string就不是object`
 
@@ -230,3 +250,7 @@
 
 - Event Bubbling`(重要！)`
   假如用兩層標籤包裹並各別加入`addEventListener`，譬如設定兩個`div`標籤，並設定`"click"`的屬性，這樣要是點選裡面的`div`標籤的話，外面的`div`標籤也會啟動，但是只有點選外面的`div`標籤則不會啟動裡面的，這個就叫做`Event Bubbling`。
+
+  假如想避免`Event bubbling`的問題，可以使用一種叫做`stopPropogation()`
+  的 function，因此可以在內層的`div`標籤(剛剛的例子)，加入`stopPropogation()`
+  即可以消除`Event bubbling的問題`。(詳見 app.js)
