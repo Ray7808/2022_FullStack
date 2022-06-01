@@ -680,4 +680,11 @@
 // console.log(myAddress);
 
 // localStorage.removeItem("name");
+// localStorage.clear();
+
+//Using JSON
+// let friends = ["Josh", "Mike", "Doug"];
+// localStorage.setItem("friends", JSON.stringify(friends));//convert to string
+// let array = JSON.parse(localStorage.getItem("friends")); //convert back to input data type
+// console.log(array);
 localStorage.clear();

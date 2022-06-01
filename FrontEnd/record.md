@@ -103,9 +103,17 @@
   - clear()
 
     <mark>(重要)key 是不能重複的</mark><br/>
-    <mark>(重要)Storage 只能儲存 String</mark>
+    <mark>(重要)Storage 只能儲存 String，不管是 key 還是 value。假如輸入其他的，他還是會把輸入轉成 String</mark>
 
   `Local storage`和`session storage`主要的差別在於當使用者關閉瀏覽器時， `session storage`就會被破壞掉，但是`local storage`則沒有有效期限(假如沒有刪掉的話會一直存在)
+
+  ## 要如何儲存其他型態的 data?
+
+  這邊可以使用 JSON(JavaScript Object Notation)
+
+  - JSON.stringify()
+
+  - JSON.parse()
 
 <br/><br/>
 `但這不代表所有的window object的properties都是object`
@@ -253,4 +261,9 @@
 
   假如想避免`Event bubbling`的問題，可以使用一種叫做`stopPropogation()`
   的 function，因此可以在內層的`div`標籤(剛剛的例子)，加入`stopPropogation()`
-  即可以消除`Event bubbling的問題`。(詳見 app.js)
+  即可以消除`Event bubbling的問題`。(詳見 app.js)。
+
+- 為什麼要把 JavaScript 的程式放在 html 的最下面？
+
+  - 因為網站需要時間來載入 JS 的程式碼，因此需要先給使用者展示一些其他畫面。
+  - 瀏覽器要先讀取所有的 `html` 和 `css` 才能使用 `DOM`。
