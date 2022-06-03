@@ -20,6 +20,11 @@
 
   這個是有些免費 icon 的網站，只是要註冊帳號，裏面有些 icon 要付費才能做使用。
 
+  使用方法可以搭配 cdnjs font awesome 這個網站，先將此網站的 html 程式碼丟到
+  欲使用的 html 的 header 裏面，
+  再搭配原先 font awesome 的程式碼，丟到 js 裡面去 create 一個新的，即可使用。
+  詳見 project4
+
 - `icon monster`
 
   這個是全都免費的 icon 網站，只是樣式相較古老一些。

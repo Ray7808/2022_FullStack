@@ -8,6 +8,10 @@ body {
   background: linear-gradient(90deg, rgb(84, 130, 255), rgb(100, 255, 134));
 }
 
+i {
+  pointer-events: none; //避免點到i，導致有一些bug
+}
+
 header {
   height: 20vh;
   display: flex;
@@ -62,6 +66,7 @@ section {
     display: flex;
     align-items: center;
     margin: 0.2rem 0rem;
+    transition: all 0.1s ease;
 
     p {
       background-color: white;
@@ -69,5 +74,47 @@ section {
       padding: 0.25rem 0.5rem;
       font-size: 1.75rem;
     }
+    p.todo-text {
+      width: 50%;
+    }
+    p.todo-time {
+      width: 20%;
+      align-items: center;
+    }
+
+    button {
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+      cursor: pointer;
+      border: none;
+      color: white;
+    }
+    button.complete {
+      background-color: rgb(50, 255, 50);
+    }
+    button.trash {
+      background-color: red;
+    }
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+  opacity: 0.5;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
   }
 }

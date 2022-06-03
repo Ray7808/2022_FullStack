@@ -17,6 +17,11 @@ add.addEventListener("click", (e) => {
   //   console.log(todoMonth);
   //   console.log(todoDate);
 
+  if (todotext === "") {
+    alert("please add some text!");
+    return;
+  }
+
   //create a todo item
   let todo = document.createElement("div");
   todo.classList.add("todo");
@@ -28,5 +33,37 @@ add.addEventListener("click", (e) => {
   time.innerText = todoMonth + " / " + todoDate;
   todo.appendChild(text);
   todo.appendChild(time);
+
+  // create green check and red trash can
+  let completeButton = document.createElement("button");
+  completeButton.classList.add("complete");
+  completeButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+  completeButton.addEventListener("click", (e) => {
+    // console.log(e.target);
+    let todoItem = e.target.parentElement;
+    // todoItem.classList.add("done");
+    todoItem.classList.toggle("done");
+  });
+
+  let trashButton = document.createElement("button");
+  trashButton.classList.add("trash");
+  trashButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+  trashButton.addEventListener("click", (e) => {
+    // console.log(e.target);
+    let todoItem = e.target.parentElement;
+
+    todoItem.addEventListener("animationend", (e) => {
+      todoItem.remove();
+    });
+    todoItem.style.animation = "scaleDown 0.3s forwards";
+    // todoItem.classList.add("done");
+    // todoItem.remove();
+  });
+
+  todo.appendChild(completeButton);
+  todo.appendChild(trashButton);
+
+  todo.style.animation = "scaleUp 0.3s forwards";
+  form.children[0].value = ""; //clear the text input
   section.appendChild(todo);
 });
