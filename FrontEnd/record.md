@@ -209,7 +209,7 @@
     這邊是可以透過先用`querySelector`得到標籤(class)內容，
     再透過上面的四個來新增移除想加入的 class 屬性。
 
-    toggle 是表示當選取的標籤或 class 沒有遇新增的 class 時，可以增加它，但是假如已經擁有的話就會移除它。
+    <mark>toggle 是表示當選取的標籤或 class 沒有遇新增的 class 時，可以增加它，但是假如已經擁有的話就會移除它。<mark />
 
     contains(`欲確認的class`)：因此 contains 會回傳 true 或 false 來確認是否該標籤裡面是否具有欲確認的 class。
 
@@ -272,3 +272,9 @@
 
   - 因為網站需要時間來載入 JS 的程式碼，因此需要先給使用者展示一些其他畫面。
   - 瀏覽器要先讀取所有的 `html` 和 `css` 才能使用 `DOM`。
+
+---
+
+## Advanced JavaScript
+
+<mark>內容都在 Javascript/AdvancedJS.js 裏面。<mark />
