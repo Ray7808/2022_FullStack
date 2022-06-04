@@ -57,6 +57,20 @@ form {
   }
 }
 
+div.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    cursor: pointer;
+    background-color: rgb(0, 146, 114);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+  }
+}
+
 section {
   display: flex;
   flex-direction: column;
