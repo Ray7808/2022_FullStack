@@ -275,6 +275,28 @@
 
 ---
 
-## Advanced JavaScript
+# Advanced JavaScript
 
-<mark>內容都在 ./Javascript/AdvancedJS.js 裏面。<mark />
+## Part 1
+
+<mark>內容都在 ./Javascript/AdvancedJSPart1.js 裏面。<mark />
+
+## Part 2
+
+<mark>內容除了搭配
+./Javascript/AdvancedJSPart2.js 裏面外，
+也會在這邊同步紀錄。
+<mark />
+
+- Global(Function) Execution Context
+
+  當 JavaScript 在執行時，通常會經過兩階段，分別是：
+
+  1. Creation phase：創造`window object`等參數。
+
+  2. Execution phase：執行 Code。
+
+---
+
+markdown ref:
+https://www.mdeditor.tw
