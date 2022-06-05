@@ -277,4 +277,4 @@
 
 ## Advanced JavaScript
 
-<mark>內容都在 Javascript/AdvancedJS.js 裏面。<mark />
+<mark>內容都在 ./Javascript/AdvancedJS.js 裏面。<mark />
