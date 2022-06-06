@@ -296,6 +296,33 @@
 
   2. Execution phase：執行 Code。
 
+- Hoisting
+
+  - let, const, var 區別：
+
+    1.  只有 const 需要初始化，
+        let 跟 var 不用，只是會顯示 undefined 而已。
+
+    2.  只有 var 可以重複宣告，let 跟 const 不行。
+
+    3.  只有 let 和 var 可以重複指派值，const 不行
+
+  - Hoisting 的現象就是代表，在 creation phase(創造參數)時，
+    它會先將記憶體分給所有 funciton 宣告的變數以及 var，
+    但是不會分給 let,const 還有 function expression。
+    (詳見 `AdvancedJSPart2.js`)
+
+- Scope
+
+  Scope determines the accessibility(visibility,可見度/可接觸度)
+  of these variables.
+
+  There are three types of scope in JS:
+
+  1. Globle Scope
+  2. Function Scope
+  3. Block Scope
+
 ---
 
 markdown ref:
