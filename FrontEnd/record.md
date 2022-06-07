@@ -319,9 +319,9 @@
 
   There are three types of scope in JS:
 
-  1. Globle Scope
-  2. Function Scope
-  3. Block Scope
+  1. Globle Scope(All)
+  2. Function Scope(All)
+  3. Block Scope(for loop and if statement)(const, let)
 
 ---
 
