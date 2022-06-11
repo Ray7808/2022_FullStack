@@ -73,3 +73,97 @@
 // console.log(x); //let在scope外面無法執行
 // console.log(y); //const在scope外面無法執行
 // console.log(z); //var在scope外面`可以`執行
+
+//Closure
+//Condition 1
+// let myName = "Wilson";
+// function sayHi() {
+//     let myName = "Obama";
+//     console.log(myName + " says hi");
+//     function sayHi2() {
+//         console.log(myName + " says hi 2.");
+//     }
+//     sayHi2();
+// }
+// sayHi();
+//結果:都會輸出Obama
+//Condition 2
+// let myName = "Wilson";
+// function sayHi() {
+//     let myName = "Obama";
+//     console.log(myName + " says hi");
+//     sayHi2();
+// }
+// sayHi();
+// function sayHi2() {
+//     console.log(myName + " says hi 2.");
+// }
+//結果:fun1輸出Obama，fun2輸出Wilson
+//Condition 3
+// let myName = "Wilson";
+// function sayHi() {
+//     let myName = "Obama";
+//     console.log(myName + " says hi");
+//     function sayHi2() {
+//         console.log(myName + " says hi 2.");
+//     }
+//     function sayHi3() {
+//         let myName = "Neo";
+//         sayHi2();
+//     }
+//     sayHi3();
+// }
+// sayHi();
+//結果:都會輸出Obama
+
+//Constructor function
+// function Person(name, age, height, weight) {
+//     (this.name = name),
+//     (this.age = age),
+//     (this.height = height),
+//     (this.weight = weight),
+//     (this.sayHi = function() {
+//         console.log(this.name + " say hi.");
+//     });
+// }
+// let Wilson = new Person("Wilson Ren", 25, 179, 75);
+// let Mike = new Person("Mike huang", 28, 185, 73);
+// Wilson.sayHi();
+
+//Prototype
+// function Person(name, age, height, weight) {
+//     (this.name = name),
+//     (this.age = age),
+//     (this.height = height),
+//     (this.weight = weight);
+// }
+// Person.prototype.sayHi = function() {
+//     console.log(this.name + " says hi!");
+// };
+// let Wilson = new Person("Wilson Ren", 25, 179, 75);
+// let Mike = new Person("Mike huang", 28, 185, 73);
+// console.log(Wilson.sayHi === Mike.sayHi); //true 因為都是用同個function，但原本的就會創造很多sayHi function
+
+//Prototype Inheritance (Prototype繼承 以及 bind, call和apply)
+let Wilson = {
+    name: "Wilson Ren",
+    age: 25,
+};
+
+function getAge() {
+    console.log(this.age);
+}
+
+function getAgeV2(country, height) {
+    console.log(this.age);
+    console.log("I am from " + country + ". I am " + height + " cm.");
+}
+//bind, call, apply
+//bind function example
+// let getWilsonAge = getAge.bind(Wilson);
+// getWilsonAge();
+//call and apply function example
+//You can also add more parameters
+//Using array can have the same effect
+getAgeV2.call(Wilson, "Taiwan", 179);
+getAgeV2.apply(Wilson, ["Taiwan", 179]); //same result but need array
