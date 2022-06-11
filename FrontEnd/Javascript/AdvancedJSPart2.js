@@ -145,19 +145,19 @@
 // console.log(Wilson.sayHi === Mike.sayHi); //true 因為都是用同個function，但原本的就會創造很多sayHi function
 
 //Prototype Inheritance (Prototype繼承 以及 bind, call和apply)
-let Wilson = {
-    name: "Wilson Ren",
-    age: 25,
-};
+// let Wilson = {
+//     name: "Wilson Ren",
+//     age: 25,
+// };
 
-function getAge() {
-    console.log(this.age);
-}
+// function getAge() {
+//     console.log(this.age);
+// }
 
-function getAgeV2(country, height) {
-    console.log(this.age);
-    console.log("I am from " + country + ". I am " + height + " cm.");
-}
+// function getAgeV2(country, height) {
+//     console.log(this.age);
+//     console.log("I am from " + country + ". I am " + height + " cm.");
+// }
 //bind, call, apply
 //bind function example
 // let getWilsonAge = getAge.bind(Wilson);
@@ -165,5 +165,38 @@ function getAgeV2(country, height) {
 //call and apply function example
 //You can also add more parameters
 //Using array can have the same effect
-getAgeV2.call(Wilson, "Taiwan", 179);
-getAgeV2.apply(Wilson, ["Taiwan", 179]); //same result but need array
+// getAgeV2.call(Wilson, "Taiwan", 179);
+// getAgeV2.apply(Wilson, ["Taiwan", 179]); //same result but need array
+
+//Prototype Inheritance part 2
+function Person(name, age, height, weight) {
+    (this.name = name),
+    (this.age = age),
+    (this.height = height),
+    (this.weight = weight);
+}
+Person.prototype.sayHi = function() {
+    console.log(this.name + " says hi!");
+};
+
+function Student(name, age, height, weight, major, grade) {
+    Person.call(this, name, age, height, weight);
+    this.major = major;
+    this.grade = grade;
+}
+Student.prototype = Object.create(Person.prototype);
+let Wilson = new Student("Wilson Ren", 25, 179, 75, "CS", 3.85); //單純這樣沒有繼承prototype的部分
+//解決繼承prototype的問題
+//method 1:
+// Student.prototype.sayHi = function() {
+//     console.log(this.name + " says hi!");
+// };
+// Wilson.sayHi();
+//method 2;
+//在第187行，因為在創建新Student前要先繼承prototype
+Wilson.sayHi();
+//新創的prototype(Student)也可以在創建自己的prototype，這樣就只有Student有，Person沒有
+Student.prototype.study = function() {
+    console.log("I am studying!");
+};
+Wilson.study();

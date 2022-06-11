@@ -309,3 +309,5 @@
      - call and apply
 
        可以得到一樣的結果，差別在於用 apply 時，參數要用 array 包住。
+
+- Prototype Inheritance
