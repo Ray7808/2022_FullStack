@@ -311,3 +311,14 @@
        可以得到一樣的結果，差別在於用 apply 時，參數要用 array 包住。
 
 - Prototype Inheritance
+
+  詳細在 `AdvancedJSPart2.js`
+
+- Class
+
+  把原本 Prototype Inheritance 的概念包裝成語法糖(更簡單使用)。
+
+- Static preperties and methods
+
+  假如設定 static 的方法或是元素時，他就會屬於這個設定的 class 裡面，
+  意味著，當程式載入記憶體時，跟程式一起在記憶體中佔有空間，而不是主程式開始執行後才跟記憶體要空間。

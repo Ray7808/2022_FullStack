@@ -169,23 +169,23 @@
 // getAgeV2.apply(Wilson, ["Taiwan", 179]); //same result but need array
 
 //Prototype Inheritance part 2
-function Person(name, age, height, weight) {
-    (this.name = name),
-    (this.age = age),
-    (this.height = height),
-    (this.weight = weight);
-}
-Person.prototype.sayHi = function() {
-    console.log(this.name + " says hi!");
-};
+// function Person(name, age, height, weight) {
+//     (this.name = name),
+//     (this.age = age),
+//     (this.height = height),
+//     (this.weight = weight);
+// }
+// Person.prototype.sayHi = function() {
+//     console.log(this.name + " says hi!");
+// };
 
-function Student(name, age, height, weight, major, grade) {
-    Person.call(this, name, age, height, weight);
-    this.major = major;
-    this.grade = grade;
-}
-Student.prototype = Object.create(Person.prototype);
-let Wilson = new Student("Wilson Ren", 25, 179, 75, "CS", 3.85); //單純這樣沒有繼承prototype的部分
+// function Student(name, age, height, weight, major, grade) {
+//     Person.call(this, name, age, height, weight);
+//     this.major = major;
+//     this.grade = grade;
+// }
+// Student.prototype = Object.create(Person.prototype);
+// let Wilson = new Student("Wilson Ren", 25, 179, 75, "CS", 3.85); //單純這樣沒有繼承prototype的部分
 //解決繼承prototype的問題
 //method 1:
 // Student.prototype.sayHi = function() {
@@ -194,9 +194,66 @@ let Wilson = new Student("Wilson Ren", 25, 179, 75, "CS", 3.85); //單純這樣�
 // Wilson.sayHi();
 //method 2;
 //在第187行，因為在創建新Student前要先繼承prototype
-Wilson.sayHi();
+// Wilson.sayHi();
 //新創的prototype(Student)也可以在創建自己的prototype，這樣就只有Student有，Person沒有
-Student.prototype.study = function() {
-    console.log("I am studying!");
-};
-Wilson.study();
+// Student.prototype.study = function() {
+//     console.log("I am studying!");
+// };
+// Wilson.study();
+
+//Class
+// class Person {
+//   //Construction function
+//   constructor(name, age, height, weight) {
+//     this.name = name;
+//     this.age = age;
+//     this.height = height;
+//     this.weight = weight;
+//   }
+//   sayHi() {
+//     console.log(this.name + " says hi.");
+//   }
+//   intro() {
+//     console.log("Hi, my name is " + this.name + ".");
+//   }
+// }
+
+// let mike = new Person("Mike Huang", 35, 185, 85);
+// let Wilson = new Person("Wilson Ren", 25, 179, 75);
+// console.log(mike);
+// console.log(mike.sayHi() === Wilson.sayHi());
+//接下來這邊是Student使用class繼承Person的部分
+// class Student extends Person {
+//   constructor(name, age, height, weight, major, grade) {
+//     super(name, age, height, weight);
+//     (this.major = major), (this.grade = grade);
+//   }
+//   study() {
+//     console.log(this.name + " am studying!");
+//   }
+// }
+// let Wilson2 = new Student("Wilson Ren", 25, 179, 75, "CS", 3.75);
+// console.log(Wilson2);
+// Wilson2.study();
+
+//Static preperties and methods
+class Circle {
+  static pi = 3.1415926;
+  constructor(radius) {
+    this.radius = radius;
+  }
+  getArea() {
+    //面積
+    return this.radius * this.radius * Circle.pi;
+  }
+  getPerimeter() {
+    //周長
+    return 2 * 3.14 * this.radius;
+  }
+  static getAreaFormula() {
+    console.log("r *r * 3.14");
+  }
+}
+
+let c1 = new Circle(10);
+console.log(c1.getArea());
