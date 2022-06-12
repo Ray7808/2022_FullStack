@@ -237,23 +237,28 @@
 // Wilson2.study();
 
 //Static preperties and methods
-class Circle {
-  static pi = 3.1415926;
-  constructor(radius) {
-    this.radius = radius;
-  }
-  getArea() {
-    //面積
-    return this.radius * this.radius * Circle.pi;
-  }
-  getPerimeter() {
-    //周長
-    return 2 * 3.14 * this.radius;
-  }
-  static getAreaFormula() {
-    console.log("r *r * 3.14");
-  }
-}
+// class Circle {
+//   static pi = 3.1415926;
+//   constructor(radius) {
+//     this.radius = radius;
+//   }
+//   getArea() {
+//     //面積
+//     return this.radius * this.radius * Circle.pi;
+//   }
+//   getPerimeter() {
+//     //周長
+//     return 2 * 3.14 * this.radius;
+//   }
+//   static getAreaFormula() {
+//     console.log("r *r * 3.14");
+//   }
+// }
 
-let c1 = new Circle(10);
-console.log(c1.getArea());
+// let c1 = new Circle(10);
+// console.log(c1.getArea());
+
+// Ternary Operator
+let age = 20;
+let price = age < 18 ? 50 : 100;
+console.log(price);

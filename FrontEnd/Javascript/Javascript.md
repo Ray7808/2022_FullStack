@@ -322,3 +322,17 @@
 
   假如設定 static 的方法或是元素時，他就會屬於這個設定的 class 裡面，
   意味著，當程式載入記憶體時，跟程式一起在記憶體中佔有空間，而不是主程式開始執行後才跟記憶體要空間。
+
+- Ternary oprator
+
+  假設輸入
+
+  > let age = 20;
+  > let price = (age <18)? 50:100;
+  > console.log(price);
+
+  這是表示假如 age 大於 18 要顯示 100，否則顯示 50，
+
+  上述表述式是：
+
+  let price = (condition) ? (result in true condition) : (result in the false condition)
