@@ -336,3 +336,34 @@
   上述表述式是：
 
   let price = (condition) ? (result in true condition) : (result in the false condition)
+
+- Default parameter
+
+  在創造 function 時，要是沒給初始值會出現 undefined 跟 NaN 的情形，
+  這時可以先使用以下方式給予初始值，這樣在沒給初始值時可以先用預設的值輸出
+
+  > function multiply(`a = 1, b = 1`){
+  > console.log(a \* b);
+  > }
+
+- Backstick
+
+  這個跟 Python 類似，
+  因為以往寫法寫起來較不直觀，
+  因此可以用的寫法像是：
+
+  > let myName = "Wilson Ren";
+
+  > console.log(myName + " says hi."); //舊的寫法
+
+  > console.log(`${myName} says hi.`); //backstick 寫法
+
+- IIFE(Immediately Invoked Function Expresssion)
+
+  這是馬上執行 function 的部分。
+  以往都要再額外寫一串來執行該 function，
+  現在提供一種是可以直接執行該 function 的方式。
+
+- Destructing an object
+
+  這邊可以使用一行就把 object 裡的數值提取出來做使用。
