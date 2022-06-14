@@ -38,3 +38,8 @@
     1. path
     2. url
     3. fs(file system)
+
+  - IP, DNS, Port
+
+    1. IP address
+       由四個 bytes(1 個 bytes 有 8 個 bits)組成。
