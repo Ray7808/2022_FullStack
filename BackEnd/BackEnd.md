@@ -21,3 +21,20 @@
   - Module in Node.js is a "simple or complex functionality" organized in single or multiple JavaScript files which can be reused throughout the Node.js application.
 
   - There are built-in modules in Node.js, but we can also make our own modules.
+
+  - console.log(module):可以看到使用什麼 js 檔案跟顯示各個資訊。
+
+  - 可以透過`module.exports`跟`require`來使用其他 js 檔裡面的函式(詳見 try1.js 跟 app.js)。
+
+  - 假如因為太多函式，因此放到一個資料夾，然後想一次使用他們的話，
+    可以先創建資料夾將檔案都放進去，然後創建一個額外的 js 檔(index.js)，
+    負責輸出這些套件的 js 檔，然後再從主要的 js 去 require index.js，
+    這樣所有資料夾內有 exports 的檔案就都可以使用。
+
+  - Node 內建的 module
+
+    詳細資料在 node.js 網站點選 doc 之後的頁面左手邊。
+
+    1. path
+    2. url
+    3. fs(file system)
