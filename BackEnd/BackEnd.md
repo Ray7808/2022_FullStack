@@ -43,3 +43,12 @@
 
     1. IP address
        由四個 bytes(1 個 bytes 有 8 個 bits)組成。
+
+  - npm (Node Package Manager)
+
+    - <mark>nodemon<mark/>
+
+      ＝> 這個是當你在 js 做什麼事情之後，他會在自動在 terminal 裡面再跑一遍，
+      好處是有點像是 live server 一樣，不用再從 terminal 輸入 node app.js。
+
+  - Express

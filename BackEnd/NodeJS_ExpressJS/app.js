@@ -36,8 +36,48 @@
 //   console.log("File has been written");
 // });
 //這邊則是讀取文件
-const fs = require("fs");
-fs.readFile("./BackEnd/NodeJS_ExpressJS/try.txt", "utf8", (e, data) => {
-  if (e) throw e;
-  console.log(data);
-});
+// const fs = require("fs");
+// fs.readFile("./BackEnd/NodeJS_ExpressJS/try.txt", "utf8", (e, data) => {
+//   if (e) throw e;
+//   console.log(data);
+// });
+
+//http server test
+//這邊可以用來起server並輸入html的頁面
+//但是沒辦法加入css
+//之後會在express那邊談怎麼加入css的部分
+// const http = require("http");
+// const url = require("url");
+// const fs = require("fs");
+// const path = require("path");
+// const server = http.createServer((req, res) => {
+//   // console.log(req.url);
+//   if (req.url == "/") {
+//     fs.readFile(path.join(__dirname, "index.html"), (err, data) => {
+//       res.writeHead(200, { "Content-Type": "text/html" });
+//       res.write(data);
+//       res.end;
+//     });
+//     // res.writeHead(200, { "Content-Type": "text/html" });
+//     // res.write("<h1>You are on the homepage!</h1>");
+//     // res.end();
+//   } else {
+//     let parsedURL = url.parse(req.url);
+
+//     res.write("Hello, " + parsedURL.pathname);
+//     res.end();
+//   }
+// });
+// server.listen(3501, () => {
+//   console.log("Server is running on port 3501.");
+// });
+
+var cowsay = require("cowsay");
+
+console.log(
+  cowsay.say({
+    text: "I'm a moooodule",
+    e: "= =",
+    T: "U ",
+  })
+);
