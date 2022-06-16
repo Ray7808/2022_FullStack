@@ -64,3 +64,8 @@
     you generate HTML markup with plain
     JavaScript.
   - It's module in npm.
+
+  - 可以把它想成可以直接用 JavaScript 寫的 Html 檔，
+    其中有些在<%%>裡面假如有等於的話，
+    代表要繼續拿那個數值做其他事，
+    沒有等於的話就呈現出來就不會再使用它了。
