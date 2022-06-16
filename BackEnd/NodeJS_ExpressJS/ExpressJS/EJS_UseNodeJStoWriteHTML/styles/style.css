@@ -9,4 +9,22 @@ body {
   background-color: #6f7774;
   color: #fdfdfd;
 }
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+th {
+  text-align: center;
+}
+
+tr,
+th,
+td {
+  padding: 0.25rem 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
