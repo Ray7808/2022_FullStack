@@ -51,4 +51,16 @@
       ＝> 這個是當你在 js 做什麼事情之後，他會在自動在 terminal 裡面再跑一遍，
       好處是有點像是 live server 一樣，不用再從 terminal 輸入 node app.js。
 
-  - Express
+  - Express framework
+
+    他也是 npm 上面的一個套件。相較於寫原生的 node.js，
+    express 可以減少很多程式碼，而且也更方便閱讀。
+
+- Status Code
+
+- EJS (Embedded JavaScript)
+
+  - EJS is a simple templating language that lets
+    you generate HTML markup with plain
+    JavaScript.
+  - It's module in npm.
