@@ -52,3 +52,17 @@ SQL 就是 Structure Query Language，
   - Composite key
 
     假如要用兩段資料才能組成 primary key(以往只要一段)，這個就稱為 composite key。廣義上也是無重複(他們兩段的排列組合無重複)
+
+---
+
+- Data types
+
+還沒寫＝\_=
+
+---
+
+## Reference
+
+進度條：
+
+https://www.youtube.com/watch?v=3K8nF5cocZU&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmdpkV&index=5
