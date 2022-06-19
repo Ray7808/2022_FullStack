@@ -82,7 +82,21 @@ SQL 就是 Structure Query Language，
 
      可以用來儲存圖片之類的東西。
 
----
+- Table
+
+  一些 database 的指令(詳見`Udemy.sql`)：
+
+  - auto_increment
+
+    這個是會隨著欄位增加，自動增加數字的部分，如 102, 103, 104...。
+
+  - Not null
+
+    該欄位不可以是空白的。
+
+  - default
+
+    後面可以加入想加的部分，當沒有輸入數值或字元時，這個就是預設的數值或字元。
 
 ## Reference
 
