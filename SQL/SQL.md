@@ -27,6 +27,11 @@ SQL 就是 Structure Query Language，
      譬如第一個資料跟第二個資料代表客戶跟負責業務，
      第三個資料則代表公司的人員組成，這樣就算彼此有關係的。
 
+     <mark>下面這點跟資料結構有關!</mark>
+
+     另外 SQL 找資料是用`sequential serach(O(n))`，
+     但是 NoSQL 是用`Hash function(O(1))`
+
   4. Keys
 
   - Primary key

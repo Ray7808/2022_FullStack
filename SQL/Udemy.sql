@@ -1,4 +1,4 @@
--- #Create the table about employees
+-- Create the table about employees
 # CREATE TABLE `Udemy`.`Employees` (
     # employeeID int primary key auto_increment,
 #     employeeName varChar(20) not null,
@@ -26,7 +26,42 @@
 # insert into Udemy.Employees values(108, "Oliver", 30, 1500, 102, 2);
 
 -- See all the data inside the table
-select * from Udemy.Employees;
+# select * from Udemy.Employees;
 
 -- Update the data
-# update Udemy.Employees set employeeID = 107 where employeeID =108;
+# update Udemy.Employees set employeeID = 107 where employeeID = 108; #One item
+-- For multi-item, u need to close the safe update function and then u can
+-- update the multi items
+# SET SQL_SAFE_UPDATES=0;
+# update Udemy.Employees set salary = 1800 where salary = 1500; #Multi item
+# SET SQL_SAFE_UPDATES=1;
+
+-- Delete the item
+# delete from Udemy.Employees where  employeeID = 107;
+# delete from Udemy.Employees where  employeeID = null;
+-- Delete all the data within the table
+# delete from Udemy.Employees;
+-- Delete(drop) the tables
+# drop table Udemy.Employees;
+
+-- query (searching)
+-- Searching all
+# select * from Udemy.Employees;
+-- Searching for some certain items
+# select employeeID, employeeName from Udemy.Employees;
+-- sorting using some way(using order by)(from small to big)
+# select * from Udemy.Employees order by age;
+-- sorting using some way(using order by)(from big to small)
+# select * from Udemy.Employees order by age desc;
+-- Choose first m items(Using limit)
+# select * from Udemy.Employees limit 3;
+-- Find some value larger than some specific values
+-- You can also use "and" and "or"
+# select * from Udemy.Employees where salary >=2000;
+# select * from Udemy.Employees where department = 2;
+select * from Udemy.Employees where salary >=2000 and department = 1;
+
+
+
+
+
