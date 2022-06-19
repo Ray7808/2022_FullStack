@@ -57,7 +57,30 @@ SQL 就是 Structure Query Language，
 
 - Data types
 
-還沒寫＝\_=
+  詳細的也可以去 w3schools 看。
+
+  1. INT
+
+  2. DECIMAL(p,s)
+
+     這是十進位的部分。
+     其中的 p 是 total digits，s 是 digits after the dot，
+     例如我們想輸入 3.14，
+     則因為全部有三個數字(3,1,4)，但是小數點後面只有兩個，
+     因此 p 在這邊是 3，s 在這邊是 2。
+
+  3. VARCHAR(M)
+
+     這個是 char 的部分，因此裡面的 M 代表總共可以塞幾個字元(characters)。
+     另外在 SQL 裏，string 不叫 string 叫做 varchar。
+
+  4. DATE
+
+     日期。內容是"YYYY-MM-DD"(包含年份，月份跟日期)
+
+  5. BLOB(Binary Large OBjects)
+
+     可以用來儲存圖片之類的東西。
 
 ---
 
@@ -65,4 +88,4 @@ SQL 就是 Structure Query Language，
 
 進度條：
 
-https://www.youtube.com/watch?v=3K8nF5cocZU&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmdpkV&index=5
+https://www.youtube.com/watch?v=hpDTlbWiWq8&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmdpkV&index=9
