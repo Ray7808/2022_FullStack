@@ -59,7 +59,7 @@
 -- You can also use "and" and "or"
 # select * from Udemy.Employees where salary >=2000;
 # select * from Udemy.Employees where department = 2;
-select * from Udemy.Employees where salary >=2000 and department = 1;
+# select * from Udemy.Employees where salary >=2000 and department = 1;
 
 
 
