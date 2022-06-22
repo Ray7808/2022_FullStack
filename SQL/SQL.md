@@ -109,16 +109,46 @@ SQL 就是 Structure Query Language，
 
 https://www.youtube.com/watch?v=hpDTlbWiWq8&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmdpkV&index=9
 
+---
+
 # MongoDB
 
 - 開啟 MongoDB
 
-  brew services start mongodb-community@5.0
+  > brew services start mongodb-community@5.0
 
 - 關閉 MongoDB
 
-  brew services stop mongodb-community@5.0
+  > brew services stop mongodb-community@5.0
 
 - 確認 MongoDB 是否有在執行
 
-  brew services list
+  > brew services list
+
+- 建構一個 database folder 給 MongoDB(for 不同專案要確認 folder 對應位置)
+
+  > mongod --dbpath /SQL/MongoDB/
+
+- 進入 MongoDB Shell
+
+  > mongo
+
+- 查看目前 db 使用情形(要先使用 mongo 進入 MongoDB shell)
+
+  > show dbs
+
+- 確認在哪個資料庫(要先使用 mongo 進入 MongoDB shell)
+
+  > db
+
+- 確認要使用哪個資料庫(要先使用 mongo 進入 MongoDB shell)
+
+  > use <這邊輸入要使用的資料庫 or 創建新的>
+
+  `這邊要補充的是：假設你想創建新的db但是他們沒有的話，Mongodb會自動幫你創建一個 `
+
+- 查看目前資料庫裡面有什麼(要先使用 mongo 進入 MongoDB shell)
+
+  > show collections
+
+Ref:https://www.youtube.com/watch?v=-56x56UppqQ
