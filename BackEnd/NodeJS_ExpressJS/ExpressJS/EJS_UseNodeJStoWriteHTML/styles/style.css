@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #6f7774;
-  color: #fdfdfd;
+  background-color: rgb(111, 119, 116);
+  color: rgb(253, 253, 253);
 }
 
 table,
@@ -26,5 +25,4 @@ tr,
 th,
 td {
   padding: 0.25rem 0.5rem;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

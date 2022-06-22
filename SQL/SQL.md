@@ -151,4 +151,90 @@ https://www.youtube.com/watch?v=hpDTlbWiWq8&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmd
 
   > show collections
 
-Ref:https://www.youtube.com/watch?v=-56x56UppqQ
+MongoDB Crash Course Ref:https://www.youtube.com/watch?v=-56x56UppqQ
+
+## MongoDB CRUD
+
+在創建的 db 裡先使用
+
+> use <欲使用的 db>
+
+之後可以直接創建對應的 table，這邊用`students`(沒有的話，他會自動新增一個)：
+
+> db.students
+
+1.  Insertion(Create)
+
+    - 之後想加入一個物件可以輸入：
+
+      > db.students.insertOne({物件內容})
+
+      例子：
+
+      > db.students.insertOne({name:"Rush", age:29, major:"EE", Scholarship:{merit:3400, other:2500}})
+
+      當加入之後，該物件前面會有一個特別的 ID，這同等於 SQL 裡面的 primary key(唯一的)。
+
+    - 若是想加入多個，可以使用：
+
+      > db.students.insertMany([{欲加入的物件一},{欲加入的物件二},{欲加入的物件三}])
+
+    - 把上述兩種集結起來就是：
+
+      > db.students.insert({欲新增的物件})
+
+      這邊可以輸入一個或是多個物件。
+
+      `但是假如用這個的話，回傳的訊息就沒有上述兩個多，所以最好還是用最上面的比較可以判斷`
+
+2.  Find(Read)
+
+    而要確認該物件是否有進去，
+    可以輸入：
+
+    > db.students.find()
+
+    或是
+
+    > db.students.find({})
+
+    另外若是想單純找特定的資訊的話，可以使用：
+
+    > db.students.find( {`該資訊及內容`} )
+
+    <mark>Advanced finding<mark/>
+
+    假如想找物件裡面的物件的內容(在這邊像是)，可以使用：
+
+    > db.students.find({物件.物件裡的物件:物件的物件的內容})
+    > 例子：
+    > db.students.find({"Scholarship.merit":3400})
+
+    就可以找尋到物件的物件裡的內容了。
+    這邊得到的結果也被稱為 `Nested object(含該物件完整內容)`。
+
+    但是除了 set 外，也可以查找一些值大於或小於特定職的情況，
+    這邊可以查看這個頁面：https://www.mongodb.com/docs/manual/reference/operator/query-comparison/?_ga=2.117251141.2134925342.1655866178-2088865431.1655866178
+
+3.  Update
+
+    跟 insert 一樣，可以使用 `updateOne` 或是 `updateMany`，
+    這邊單純修改一個物件，可以輸入：
+
+    > db.students.updateOne({name:"Wilson"}, {$set:{name:"Wilson Ru", age:28}, $currentDate:{lastModified:true}})
+
+    這樣整體就可以修改成後面的版本。
+
+    也因此表示 update 有三個參數：1.想被修改的項目、2.想更新的內容、3.修改時間(可加可不加)。
+
+    補充：使用`updateOne`可以修改 db 裡第一個搜尋到的物件，但是使用`updateMany`可以修改 db 裡所有搜尋到的物件(其他部分跟 updateOne 一樣)。
+
+4.  Delete
+
+    跟 update 一樣，可以使用 `deleteOne` 或是 `deleteMany`。
+
+# Mongoose
+
+- Mongoose is a `ODM(Object Document Modeling)` that is used to connect MongoDB to our web projects.
+- SQL used `ORM(Object Relational Modeling)`, NoSQL uses ODM.
+- It's a module in npmjs

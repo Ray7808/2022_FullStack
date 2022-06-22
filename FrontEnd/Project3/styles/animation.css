@@ -6,15 +6,9 @@ div.animation {
   top: 0;
   z-index: 10;
   color: #e08958;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #first_1 {
@@ -140,7 +134,6 @@ div.animation {
     stroke-dashoffset: 0px;
   }
 }
-
 @-webkit-keyframes fillAll {
   from {
     fill: transparent;
@@ -149,7 +142,6 @@ div.animation {
     fill: white;
   }
 }
-
 @keyframes fillAll {
   from {
     fill: transparent;
@@ -157,5 +149,4 @@ div.animation {
   to {
     fill: white;
   }
-}
-/*# sourceMappingURL=animation.css.map */
+}/*# sourceMappingURL=animation.css.map */
