@@ -108,3 +108,17 @@ SQL 就是 Structure Query Language，
 進度條：
 
 https://www.youtube.com/watch?v=hpDTlbWiWq8&list=PL2SrkGHjnWcy0n1bNe5sAPB3snlGmdpkV&index=9
+
+# MongoDB
+
+- 開啟 MongoDB
+
+  brew services start mongodb-community@5.0
+
+- 關閉 MongoDB
+
+  brew services stop mongodb-community@5.0
+
+- 確認 MongoDB 是否有在執行
+
+  brew services list
