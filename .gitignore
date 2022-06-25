@@ -3,4 +3,5 @@ FrontEnd/.DS_Store
 .vscode
 node_modules
 SQL/MongoDB
-2022_FullStack/SQL/MongooseProject/node_modules
+SQL/MongooseProject/node_modules
+FrontEnd/React/my-app
