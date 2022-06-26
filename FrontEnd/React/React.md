@@ -24,3 +24,16 @@
 - `Babel is a JavaScript compiler`. Babel is a JavaCsript compiler that includes the ability to compile JSX into regular JavaScript.
 
 這邊可以透過`import`不同 JSReact 檔案，來輸入不同的 HTML 標籤，然後藉此利用 JS 寫大部分的網頁(詳見 jsx-practice)
+
+- JavaScript in JSX
+
+  這邊可以使用`{}`就可以將 js 的程式碼輸入進去，
+  `forloop`的話則是用 `map function` 來達成。
+
+- CSS in JSX
+
+  只要透過輸入
+
+  > import "./styles/style.css";
+
+  就會自動套用該 CSS 的各個屬性。
