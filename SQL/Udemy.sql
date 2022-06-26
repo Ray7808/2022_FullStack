@@ -9,7 +9,7 @@
 # );
 
 -- See the details of the database
-# describe UdemployeeIDemy.Employees;
+# describe Udemy.Employees;
 
 -- Drop the table
 # drop table Udemy.Employees;
