@@ -37,3 +37,9 @@
   > import "./styles/style.css";
 
   就會自動套用該 CSS 的各個屬性。
+
+- Props (properties)
+
+  每個在 React 的 component 都有他自己的屬性。
+  可以在其他 js 檔寫成一個函式(詳見`practice-jsx/props.js`)，
+  之後再透過 `app.js` 輸入對應的參數來改變裡面的東西。
