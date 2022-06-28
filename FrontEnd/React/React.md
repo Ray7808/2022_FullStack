@@ -43,3 +43,9 @@
   每個在 React 的 component 都有他自己的屬性。
   可以在其他 js 檔寫成一個函式(詳見`practice-jsx/props.js`)，
   之後再透過 `app.js` 輸入對應的參數來改變裡面的東西。
+
+- State, state lifting, and Event handling
+
+  套件 UUID
+
+- useEffect
