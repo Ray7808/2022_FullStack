@@ -1,13 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#5482ff), to(#64ff86));
-  background: linear-gradient(90deg, #5482ff, #64ff86);
+  background: linear-gradient(90deg, rgb(84, 130, 255), rgb(100, 255, 134));
 }
 
 i {
@@ -16,36 +14,22 @@ i {
 
 header {
   height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 header h1 {
   color: white;
   font-size: 3rem;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
-
 form input,
 form button {
   border: none;
@@ -53,43 +37,32 @@ form button {
   font-size: 1.75rem;
   margin: 0.1rem;
 }
-
-form input[type="number"] {
+form input[type=number] {
   width: 50px;
   text-align: center;
 }
-
 form input::-webkit-outer-spin-button,
 form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-form input[type="number"] {
+form input[type=number] {
   -moz-appearance: textfield;
 }
-
 form button {
   cursor: pointer;
-  background-color: #009272;
+  background-color: rgb(0, 146, 114);
   color: white;
 }
 
 div.sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 div.sort button {
   cursor: pointer;
-  background-color: #009272;
+  background-color: rgb(0, 146, 114);
   color: white;
   border: none;
   padding: 0.25rem 0.5rem;
@@ -97,49 +70,30 @@ div.sort button {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 section div.todo {
   width: 30vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0.2rem 0rem;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
-
 section div.todo p {
   background-color: white;
   color: black;
   padding: 0.25rem 0.5rem;
   font-size: 1.75rem;
 }
-
 section div.todo p.todo-text {
   width: 50%;
 }
-
 section div.todo p.todo-time {
   width: 20%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 section div.todo button {
   padding: 0.25rem 0.5rem;
   font-size: 1.75rem;
@@ -147,11 +101,9 @@ section div.todo button {
   border: none;
   color: white;
 }
-
 section div.todo button.complete {
-  background-color: #32ff32;
+  background-color: rgb(50, 255, 50);
 }
-
 section div.todo button.trash {
   background-color: red;
 }
@@ -164,37 +116,28 @@ section div.todo button.trash {
 
 @-webkit-keyframes scaleUp {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scaleUp {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @-webkit-keyframes scaleDown {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
-
 @keyframes scaleDown {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

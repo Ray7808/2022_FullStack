@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(111, 119, 116);
+  color: rgb(253, 253, 253);
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+th {
+  text-align: center;
+}
+
+tr,
+th,
+td {
+  padding: 0.25rem 0.5rem;
+}/*# sourceMappingURL=style.css.map */

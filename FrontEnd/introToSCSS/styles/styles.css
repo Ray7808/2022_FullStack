@@ -1,14 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
   background-color: aqua;
 }
-
 header h1 {
   color: chocolate;
 }
@@ -16,7 +14,6 @@ header h1 {
 h2 {
   color: green;
 }
-
 h2:hover {
   color: orange;
 }
@@ -26,13 +23,8 @@ h3 {
 }
 
 div.link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .pic {
@@ -40,5 +32,4 @@ div.link {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

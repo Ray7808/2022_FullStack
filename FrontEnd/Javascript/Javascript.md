@@ -322,3 +322,48 @@
 
   假如設定 static 的方法或是元素時，他就會屬於這個設定的 class 裡面，
   意味著，當程式載入記憶體時，跟程式一起在記憶體中佔有空間，而不是主程式開始執行後才跟記憶體要空間。
+
+- Ternary oprator
+
+  假設輸入
+
+  > let age = 20;
+  > let price = (age <18)? 50:100;
+  > console.log(price);
+
+  這是表示假如 age 大於 18 要顯示 100，否則顯示 50，
+
+  上述表述式是：
+
+  let price = (condition) ? (result in true condition) : (result in the false condition)
+
+- Default parameter
+
+  在創造 function 時，要是沒給初始值會出現 undefined 跟 NaN 的情形，
+  這時可以先使用以下方式給予初始值，這樣在沒給初始值時可以先用預設的值輸出
+
+  > function multiply(`a = 1, b = 1`){
+  > console.log(a \* b);
+  > }
+
+- Backstick
+
+  這個跟 Python 類似，
+  因為以往寫法寫起來較不直觀，
+  因此可以用的寫法像是：
+
+  > let myName = "Wilson Ren";
+
+  > console.log(myName + " says hi."); //舊的寫法
+
+  > console.log(`${myName} says hi.`); //backstick 寫法
+
+- IIFE(Immediately Invoked Function Expresssion)
+
+  這是馬上執行 function 的部分。
+  以往都要再額外寫一串來執行該 function，
+  現在提供一種是可以直接執行該 function 的方式。
+
+- Destructing an object
+
+  這邊可以使用一行就把 object 裡的數值提取出來做使用。

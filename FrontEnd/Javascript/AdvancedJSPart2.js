@@ -237,23 +237,72 @@
 // Wilson2.study();
 
 //Static preperties and methods
-class Circle {
-  static pi = 3.1415926;
-  constructor(radius) {
-    this.radius = radius;
-  }
-  getArea() {
-    //面積
-    return this.radius * this.radius * Circle.pi;
-  }
-  getPerimeter() {
-    //周長
-    return 2 * 3.14 * this.radius;
-  }
-  static getAreaFormula() {
-    console.log("r *r * 3.14");
-  }
-}
+// class Circle {
+//   static pi = 3.1415926;
+//   constructor(radius) {
+//     this.radius = radius;
+//   }
+//   getArea() {
+//     //面積
+//     return this.radius * this.radius * Circle.pi;
+//   }
+//   getPerimeter() {
+//     //周長
+//     return 2 * 3.14 * this.radius;
+//   }
+//   static getAreaFormula() {
+//     console.log("r *r * 3.14");
+//   }
+// }
 
-let c1 = new Circle(10);
-console.log(c1.getArea());
+// let c1 = new Circle(10);
+// console.log(c1.getArea());
+
+// Ternary Operator
+// let age = 70;
+// let price = age < 18 ? 50 : 100;//兩種情況
+// let price = age < 18 ? 50 : age < 60 ? 100 : 75; //三種情況
+// console.log(price);
+
+//backstick
+// let myName = "Wilson Ren";
+// console.log(myName + " says hi.");
+// console.log(`${myName} says hi.`); //backstick寫法
+
+//IIFE
+//以往寫法是這樣
+// function sayHi() {
+//   console.log("Hi!");
+// }
+// sayHi();
+//IIFE的寫法則是這樣：
+// (function sayHi() {
+//   console.log("Hi!");
+// })();
+//這樣就可以在寫好之後立即使用該function
+//加入參數也是可行的
+// (function sayHi(name) {
+//   console.log("Hi! " + name);
+// })("Wilson");
+
+//Destructing an object
+// let Wilson = {
+//   firstName: "Wilson",
+//   age: 25,
+//   gender: "male",
+//   address: "Hawaii State",
+//   height: 179,
+//   weight: 75,
+//   friends: {
+//     fullName: "Mike Huang",
+//   },
+// };
+//以往寫法
+// let firstName = Wilson.firstName;
+// let gender = Wilson.gender;
+// console.log(firstName);
+//新的寫法，只要名稱相同，可以快速拿到object裡面的資料
+// let { firstName, gender } = Wilson;
+// console.log(firstName);
+// let { fullName } = Wilson.friends;
+// console.log(fullName);

@@ -1,0 +1,28 @@
+{
+  "name": "2022_fullstack",
+  "version": "1.0.0",
+  "description": "This is for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ray7808/2022_Fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ray7808/2022_Fullstack/issues"
+  },
+  "homepage": "https://github.com/Ray7808/2022_Fullstack#readme",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
